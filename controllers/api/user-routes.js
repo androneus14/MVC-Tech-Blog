@@ -26,9 +26,7 @@ router.post('/', async (req, res) => {
             req.session.username = userData.username;
             req.session.loggedIn = true;
 
-            res
-                .status(201)
-                .json({ message: `Successfully created ${userData.username}` });
+            res.status(201).json({ message: `Successfully created ${userData.username}` });
         });
     } catch (err) {
         res.status(400).json(err);
@@ -43,19 +41,15 @@ router.post('/login', async (req, res) => {
         });
 
         if (!userData) {
-            res
-                .status(400)
-                .json({ message: 'No user account found' });
-                return;
+            res.status(400).json({ message: 'No user account found' });
+            return;
         }
 
         const validPassword = await userData.checkPassword(req.body.password);
 
         if (!validPassword) {
-            res
-                .status(400)
-                .json({ message: 'Incorrect password. Please try again.'});
-                return;
+            res.status(400).json({ message: 'Incorrect password. Please try again.'});
+            return;
         }
 
         req.session.save(() => {
