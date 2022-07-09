@@ -1,0 +1,31 @@
+[
+    {
+        "comment-content": "I like this dummy post!",
+        "user_id": 1,
+        "post_id": 1
+    },
+
+    {
+        "comment-content": "I really like this dummy post!",
+        "user_id": 2,
+        "post_id": 2
+    },
+
+    {
+        "comment-content": "I love this dummy post!",
+        "user_id": 3,
+        "post_id": 3
+    },
+
+    {
+        "comment-content": "I adore this dummy post!",
+        "user_id": 4,
+        "post_id": 4
+    },
+
+    {
+        "comment-content": "This dummy post is fantastic!",
+        "user_id": 5,
+        "post_id": 5
+    }
+]
