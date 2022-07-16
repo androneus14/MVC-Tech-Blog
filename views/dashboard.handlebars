@@ -1,3 +1,9 @@
+<div>
+    {{#each posts as |post| }}
+     {{> edititem post}}
+    {{/each}}
+</div>        
+        
         <div class="card">
             <h3 class="card-header">CREATE NEW POST</h3>
             <form class="card-body create-post-form">
@@ -11,7 +17,7 @@
                     <textarea name="post-content" id="post-content" cols="30" rows="10"></textarea>
                 </div>
 
-                <button class="btn btn-primary">CREATE POST</button>
+                <button type="submit" class="btn btn-primary">CREATE POST</button>
             </form>
         </div>
 
